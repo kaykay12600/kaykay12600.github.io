@@ -1,0 +1,158 @@
+*, /*In CSS the asterisk, *, is the universal selector, which selects every element. Rather than listing every single element imaginable, we can use the asterisk as a catch-all to select all elements for us.*/
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*define the basic settings for the page*/
+body {
+  	font-family: futura-pt, sans-serif;
+
+    font-weight: 400;
+    
+    font-style: italic;, Arial, sans-serif;
+
+    
+    font-size: 24px;
+    color: #589c4f;
+    line-height: 24px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto; /*this will eliminate any white border around the browser frame*/
+
+
+}
+
+/*Create a class that will serve as a container for our elements. We can use this container class on different elements to set a common width, center the elements on the page, and apply some common horizontal padding.
+
+Setting a width tells the browser definitively how wide any element with the class of container should be. Using a left and right margin of auto in conjunction with this width lets the browser automatically figure out equal left and right margins for the element, thus centering it on the page. Lastly, the left and right padding ensures that our content isn’t sitting directly on the edge of the element and provides a little breathing room for the content.*/
+.container {
+
+}
+
+/*define the link styles*/
+a {
+  color:  #00acc1;
+}
+a:hover {
+  color:  #00acc1;
+}
+
+/*define the heading styles*/
+h1 {
+  font-weight: 300; /*setting a light version of the font quiet sans*/
+  font-style: normal;
+  font-size: 36px;
+  line-height: 44px;
+ }
+
+h2 { 
+	font-weight: 300;
+  font-size: 24px;
+  color: #FFF;
+  text-indent: 2.5%;
+  line-height: 44px;
+  background-color:  #3000c1 ;
+  
+
+}
+
+h3 { 
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+  }
+
+/*you can apply styling to multiple elements by separating them with a comma*/
+h1, h2, h3, h4, h5, p {    
+  margin-bottom: 1px;
+}
+
+/*define the strong styles*/
+strong {
+	color:  #d81b60;
+}
+/*define the unordered list styles*/
+ul {
+  color: black;
+}
+
+/*define the ordered list styles*/
+ol {
+  color: black;
+}
+
+header {
+	margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  color: #FFF; /* This is the text color*/
+  background-color: rgb(94, 77, 242); /* This is the box color*/
+}
+
+aside {
+	font-weight: 300; /*setting a light version of the font quiet sans*/
+  font-style: italic;
+  font-size: 18px;
+  line-height: 36px;
+  color: #000000;
+  padding: 1.5%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* define a style for section elements*/
+section {
+  /*border: 1px dotted #949599; /* border is set to show you the frames, you can delete*/
+  padding: 1.5%;
+}
+.affiliations {
+  float: right;
+  width: 45%;
+}
+/* using the clear property will cause the footer to drop to the bottom of the page*/
+footer {
+	  clear: both;
+    background-color:  rgb(94, 77, 243);
+    padding: 1%;
+}
+/* you can target a specific tag within another element*/
+footer p {
+  text-align: center;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #648880;
+}
+/* you can set a class to apply a custom style, in this case it is a way to override the 30% width setting on the sections*/
+.two-columns {
+  float: left; /* float property tells sections to sit side by side */
+  margin: 0 1.5%;
+  width: 40%;
+}
+.three-columns {
+  float: left; /* float property tells sections to sit side by side */
+  margin: 0 1.5%;
+  width: 30%;
+}
+html{
+  border: 19px solid rgb(94, 77, 243);
+}
+.column-1-text {
+  margin-bottom: 0px;
+}
+
+.big-letters {font-family: adelle, serif;
+
+  font-weight: 400;
+  
+  font-style: normal;}
+  
+  .small-text {font-family: futura-pt, sans-serif;
+
+    font-weight: 700;
+    
+    font-style: italic;}
